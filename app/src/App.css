@@ -1,20 +1,26 @@
 .square-black {
   width: 50px;
   height: 50px;
-  background-color: black;
-  border: 1px solid black;
+  background-color: white;
+  /* border: 1px solid black; */
+  margin-right: -1px;
+  margin-top: -1px;
+  float: left;
 }
 
 .square-white {
   width: 50px;
   height: 50px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: black;
+  /* border: 1px solid black; */
+  margin-right: -1px;
+  margin-top: -1px;
+  float: left;
 }
 
 .board {
-  width: 44rem;
-  height: 500px;
-  background-color: blue;
+  width: 408px;
+  height: 408px;
+  /* background-color: blue; */
   margin: 0 auto;
 }

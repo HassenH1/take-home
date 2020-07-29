@@ -3,12 +3,21 @@ import "../App.css";
 
 const Board = () => {
   const [square, setSquare] = useState([]);
+  let color = 0;
 
   for (let i = 0; i < 64; i++) {
-    if (i % 2 === 0) {
-      square.push(<div className="square-black">{i}</div>);
+    if (i % 16 === 0) {
+      square.push(<div className="square-black"></div>);
+      color = 0;
+    } else if (i % 8 === 0) {
+      square.push(<div className="square-white"></div>);
+      color = 1;
+    } else if (color === 1) {
+      square.push(<div className="square-black"></div>);
+      color = 0;
     } else {
-      square.push(<div className="square-white">{i}</div>);
+      square.push(<div className="square-white"></div>);
+      color = 1;
     }
   }
 
