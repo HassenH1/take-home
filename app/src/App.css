@@ -1,3 +1,20 @@
-.App {
-  margin-left: 30rem;
+.square-black {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.square-white {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.board {
+  width: 44rem;
+  height: 500px;
+  background-color: blue;
+  margin: 0 auto;
 }
