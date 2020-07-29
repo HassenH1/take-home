@@ -3,6 +3,7 @@ import "../App.css";
 
 const Board = () => {
   const [square, setSquare] = useState([]);
+  const [red, setRed] = useState([]);
   let color = 0;
 
   for (let i = 0; i < 64; i++) {
@@ -21,7 +22,14 @@ const Board = () => {
     }
   }
 
-  return <div className="board">{square}</div>;
+  return (
+    <>
+      <div className="board">
+        {square}
+        <div>{red}</div>
+      </div>
+    </>
+  );
 };
 
 export default Board;

@@ -24,3 +24,11 @@
   /* background-color: blue; */
   margin: 0 auto;
 }
+
+.checker {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+}
